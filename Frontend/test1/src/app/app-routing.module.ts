@@ -5,12 +5,14 @@ import { ListaClientesComponent } from './lista-clientes/lista-clientes.componen
 import { RegistrarClienteComponent } from './Registar/registrar-cliente/registrar-cliente.component';
 import { ClienteDetallesComponent } from './Detalles/cliente-detalles/cliente-detalles.component';
 
+
 const routes: Routes = [
   {path : 'clientes',component:ListaClientesComponent},
-  {path:'',redirectTo:'clientes',pathMatch:'full'},
+  {path:'',redirectTo:'clientes', pathMatch:'full'},
   {path: 'registar-cliente', component : RegistrarClienteComponent},
   {path: 'actualizar-cliente/:id', component : ActualizarClienteComponent},
-  {path: 'cliente-detalles/:id', component : ClienteDetallesComponent}
+  {path: 'cliente-detalles/:id', component : ClienteDetallesComponent},
+
 ];
 
 @NgModule({

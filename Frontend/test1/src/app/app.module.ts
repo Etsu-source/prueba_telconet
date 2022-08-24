@@ -10,13 +10,26 @@ import { RegistrarClienteComponent } from './Registar/registrar-cliente/registra
 import { ActualizarClienteComponent } from './Actualizar/actualizar-cliente/actualizar-cliente.component';
 import { ClienteDetallesComponent } from './Detalles/cliente-detalles/cliente-detalles.component';
 
+import { MainComponent } from './Componentes-Login/main/main.component';
+import { RegistrarComponent } from './Componentes-Login/registrar/registrar.component';
+import { VerificarCorreoComponent } from './Componentes-Login/verificar-correo/verificar-correo.component';
+import { RecuperarPasswordComponent } from './Componentes-Login/recuperar-password/recuperar-password.component';
+import { SpinnerComponent } from './Shared/spinner/spinner.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     ListaClientesComponent,
     RegistrarClienteComponent,
     ActualizarClienteComponent,
-    ClienteDetallesComponent
+    ClienteDetallesComponent,
+    MainComponent,
+    RegistrarComponent,
+    VerificarCorreoComponent,
+    RecuperarPasswordComponent,
+    SpinnerComponent
+
   ],
   imports: [
     BrowserModule,

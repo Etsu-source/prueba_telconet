@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a routerLink="clientes" routerLinkActive="active" class="nav-link" >Lista de cliente</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="registrar-cliente" routerLinkActive="active" class="nav-link" >Añadir cliente</a>
+    </li>
+    <div class="col-md-3 text-end">
+      <button type="button" class="btn btn-outline-primary me-2" (click)="logOut()">LogOut</button>
+    </div>
+  </ul>
+</nav>
+
+<div class="container">
+  <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal">Bienvenido!</h1>
+      <p class="fs-5 text-muted">{{ dataUser?.email }}</p>
+    </div>
+</div>
+
+<div class="container">
+  <app-lista-clientes></app-lista-clientes>
+</div>
